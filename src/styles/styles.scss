@@ -1,0 +1,78 @@
+$transition-time: 2s;
+
+#main-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100vh;
+  transition: background-color $transition-time, color $transition-time;
+}
+
+.background-lines {
+  background-color: white;
+  opacity: 0.5;
+  width: 100vh;
+  height: 30px;
+  position: fixed;
+  rotate: -60deg;
+}
+
+#quote-box {
+  width: 540px;
+  height: fit-content;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  
+  background-color: whitesmoke; 
+  border-radius: 5px;
+  padding: 30px;
+ }
+
+@media (max-width: 540px) {
+  #quote-box {
+    width: fit-content;
+  }
+}
+
+#text {
+  font-size: 32px;
+  transition: opacity calc($transition-time/2);
+  font-family: 'Libre Baskerville', serif;
+}
+
+#author {
+  font-size: 16px;
+  font-weight: lighter;
+  transition: opacity calc($transition-time/2);
+  font-family: 'Libre Baskerville', serif;
+}
+
+#buttons-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-button {
+  width: fit-content;
+  color: inherit;
+  background-color: whitesmoke;
+  border-width: 2px;
+  font-weight: bold;
+  border-color: inherit;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-button:hover {
+  background-color: currentColor;
+  color: currentColor;
+}
+
+.inside-button-div {
+  padding: 0.375rem 0.75rem;
+}
+.inside-button-div:hover {
+  color: whitesmoke;
+}
