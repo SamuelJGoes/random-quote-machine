@@ -9,6 +9,16 @@ $transition-time: 2s;
   transition: background-color $transition-time, color $transition-time;
 }
 
+.languages-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: inherit;
+  color: whitesmoke;
+  border-width: 0px;
+  font-weight: 600;
+}
+
 .background-lines {
   background-color: white;
   opacity: 0.5;
